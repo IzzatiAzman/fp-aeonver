@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Gamepads__onFirstSceneLoaded !== "undefined") {
 gdjs.evtsExt__Gamepads__onFirstSceneLoaded = {};
 
 
-gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0x12ced30 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0x1431da8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 //Define an new private object javascript for the gamepad extension
 gdjs._extensionController = {
@@ -141,7 +141,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0x12ced30(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0x1431da8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

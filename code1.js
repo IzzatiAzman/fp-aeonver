@@ -327,7 +327,7 @@ gdjs.copyArray(runtimeScene.getObjects("required_name"), gdjs.Name_32SceneCode.G
     gdjs.Name_32SceneCode.GDnameBgObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{for(var i = 0, len = gdjs.Name_32SceneCode.GDTnCObjects1.length ;i < len;++i) {
-    gdjs.Name_32SceneCode.GDTnCObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 0.15);
+    gdjs.Name_32SceneCode.GDTnCObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }}
 
