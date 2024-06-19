@@ -438,7 +438,7 @@ for (var i = 0, k = 0, l = gdjs.MenuCode.GDtncObjects1.length;i<l;++i) {
 }
 gdjs.MenuCode.GDtncObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.window.openURL("https://docs.google.com/document/d/1QQFF3-MXvqoVKm_vVRCEDfM2YE2wvA6a/edit?usp=sharing&ouid=115947219988904996496&rtpof=true&sd=true", runtimeScene);
+{gdjs.evtTools.window.openURL("https://drive.google.com/file/d/1VTVvYE7CRUIZEOltO6UYP-t5WwyIGQNd/view?usp=sharing", runtimeScene);
 }}
 
 }
