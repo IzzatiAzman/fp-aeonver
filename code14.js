@@ -210,7 +210,7 @@ for (var i = 0, k = 0, l = gdjs.Level3Code.GDJumpButtonObjects3.length;i<l;++i) 
 gdjs.Level3Code.GDJumpButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16013572);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22196996);
 }
 }
 if (isConditionTrue_0) {
@@ -239,7 +239,7 @@ for (var i = 0, k = 0, l = gdjs.Level3Code.GDJumpButtonObjects2.length;i<l;++i) 
 gdjs.Level3Code.GDJumpButtonObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16014164);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22176244);
 }
 }
 if (isConditionTrue_0) {
@@ -317,7 +317,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16023844);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22208684);
 }
 }
 if (isConditionTrue_0) {
@@ -349,7 +349,7 @@ for (var i = 0, k = 0, l = gdjs.Level3Code.GDPlayerObjects3.length;i<l;++i) {
 gdjs.Level3Code.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16016924);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22178612);
 }
 }
 if (isConditionTrue_0) {
@@ -368,7 +368,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Player__IsSteppingOnFloor.func(runtimeScene, gdjs.Level3Code.mapOfGDgdjs_9546Level3Code_9546GDPlayerObjects3Objects, "PlatformerObject", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16017732);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22179060);
 }
 }
 if (isConditionTrue_0) {
@@ -1049,7 +1049,7 @@ gdjs.Level3Code.eventsList17 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10715692);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22235268);
 }
 if (isConditionTrue_0) {
 
@@ -1326,7 +1326,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Level3Code.mapOfGDgdjs_9546Level3Code_9546GDPlayerObjects2Objects, gdjs.Level3Code.mapOfGDgdjs_9546Level3Code_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10710620);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22230388);
 }
 }
 if (isConditionTrue_0) {
