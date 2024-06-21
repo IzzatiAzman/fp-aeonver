@@ -1,0 +1,35 @@
+@font-face {
+    font-family: PressStart2P;
+    src: url('PressStart2P.ttf');
+}
+
+body {
+    margin: 0px;
+    font-family: PressStart2P;
+    color: #FFFFFF;
+}
+
+.main-div {
+    background-image: url('background-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-logo {
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+#leaderboard-table {
+    margin-top: 20px;
+    padding: 20px 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .main-logo {
+        top: 40px;
+    }
+}
