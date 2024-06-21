@@ -11,52 +11,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 	<style>
-		@media screen and (orientation:portrait) { 
-		.orientation-msg {
-			display: block;
-			width: 100%;
-			height: 100%;
-		}
-
-		#canvasArea {
-			filter: blur(8px);
-  			-webkit-filter: blur(8px);
-		}
-
-		input,
-		canvas {
-			display: none !important;
-		}
-
-		body {
-			margin: 0;
-		}
-	}
-
-	@media screen and (orientation:landscape) { 
 		body {
 			margin: 0;
 			padding: 0;
 			background-color: #000000;
             overflow: hidden;
-			position: relative;
 		}
-
         #canvasArea {
             margin-left: auto;
             margin-right: auto;
             overflow: hidden;
         }
 
-		.orientation-msg {
-			display: none;
-		}
-
-		input,
-		canvas {
-			display: block;
-		}
-	}
+        
 	</style>
     <!-- Libs and GDJS core files : -->
 		<script src="libs/jshashtable.js" crossorigin="anonymous"></script>
@@ -121,6 +88,7 @@
 	<script src="howler-sound-manager/howler-sound-manager.js" crossorigin="anonymous"></script>
 	<script src="fontfaceobserver-font-manager/fontfaceobserver.js" crossorigin="anonymous"></script>
 	<script src="fontfaceobserver-font-manager/fontfaceobserver-font-manager.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__autotyping__text_autotyping.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__checkpoints__checkpointexist-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__checkpoints__loadcheckpoint-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__checkpoints__savecheckpoint-func.js" crossorigin="anonymous"></script>
@@ -256,27 +224,13 @@
 	<script src="code15.js" crossorigin="anonymous"></script>
 	<script src="code16.js" crossorigin="anonymous"></script>
 	<script src="code17.js" crossorigin="anonymous"></script>
-	<script src="code18.js" crossorigin="anonymous"></script>
 	<script src="data.js" crossorigin="anonymous"></script>
 
-		<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1MQBTD83P"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-E1MQBTD83P');
-	</script>
 
 </head>
 <body>
-	<div class="orientation-msg">
-		<video autoplay loop width="100%" height="100%">
-			<source src="FP2.mp4" type="video/mp4">
-			Your browser does not support the video tag.
-		  </video>
-	</div>
+
+    
 	<script>
 
     (function() {
