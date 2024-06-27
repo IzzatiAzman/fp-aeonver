@@ -232,7 +232,7 @@ for (var i = 0, k = 0, l = gdjs.Level1Code.GDJumpButtonObjects3.length;i<l;++i) 
 gdjs.Level1Code.GDJumpButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25237412);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21748708);
 }
 }
 if (isConditionTrue_0) {
@@ -261,7 +261,7 @@ for (var i = 0, k = 0, l = gdjs.Level1Code.GDJumpButtonObjects2.length;i<l;++i) 
 gdjs.Level1Code.GDJumpButtonObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25238796);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21749220);
 }
 }
 if (isConditionTrue_0) {
@@ -337,7 +337,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25247796);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21756052);
 }
 }
 if (isConditionTrue_0) {
@@ -369,7 +369,7 @@ for (var i = 0, k = 0, l = gdjs.Level1Code.GDPlayerObjects3.length;i<l;++i) {
 gdjs.Level1Code.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25241156);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21751732);
 }
 }
 if (isConditionTrue_0) {
@@ -388,7 +388,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Player__IsSteppingOnFloor.func(runtimeScene, gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDPlayerObjects3Objects, "PlatformerObject", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25242348);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21751236);
 }
 }
 if (isConditionTrue_0) {
@@ -1095,7 +1095,7 @@ gdjs.Level1Code.eventsList17 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25280868);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21783516);
 }
 if (isConditionTrue_0) {
 
@@ -1225,7 +1225,7 @@ for (var i = 0, k = 0, l = gdjs.Level1Code.GDContestObjects2.length;i<l;++i) {
 gdjs.Level1Code.GDContestObjects2.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "923517cfc7f1500e851f0bbcdd357fe2b982745b128fcb3acc40d1a229575882_Click_02.aac", false, 70, 1);
-}{gdjs.evtTools.window.openURL("voucher-claim.html", runtimeScene);
+}{gdjs.evtTools.window.openURL("voucher-form.html", runtimeScene);
 }}
 
 }
@@ -1365,7 +1365,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDPlayerObjects2Objects, gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25275836);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21778852);
 }
 }
 if (isConditionTrue_0) {
@@ -1516,6 +1516,7 @@ gdjs.copyArray(runtimeScene.getObjects("ScoreText"), gdjs.Level1Code.GDScoreText
 }
 }{runtimeScene.getScene().getVariables().get("User").getChild("name").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }{runtimeScene.getScene().getVariables().get("User").getChild("score").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(0)));
+}{runtimeScene.getScene().getVariables().get("User").getChild("timestamp").setString(gdjs.evtTools.common.toString(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "mday")) + "d " + gdjs.evtTools.common.toString(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "mon") + 1) + "m " + gdjs.evtTools.common.toString(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour")) + "hrs " + gdjs.evtTools.common.toString(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "min")) + "mins");
 }{runtimeScene.getScene().getVariables().get("User").getChild("time").setString(gdjs.evtTools.common.toString(Math.round(Math.abs(gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "Level")))));
 }}
 

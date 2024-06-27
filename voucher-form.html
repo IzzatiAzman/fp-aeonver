@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form-submit.css" />
+    <title>First Pride | Join Our Contest</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="main-logo">
+        <img src="Mask Group 44.png" />
+      </div>
+      <div class="flex-div">
+        <div class="flex-text">
+          <div class="flex-text-ttl">
+            Congratulations on clearing the Speedmart 99 Nugget Quest stage. 
+            <br><br>
+            Submit your receipt of purchase [insert product name here] and fill in the form to stand a chance at winning exciting prizes.  
+            <br><br>
+            Follow our social media where we'll announce the winners!
+
+          </div>
+          <div class="flex-text-soc pc-flex">
+            <div class="flex-text-soc-ttl">Visit Our Social Media</div>
+            <div class="flex-text-soc-icon">
+              <img src="ig-icon.png" />
+              <img src="fb-icon.png" />
+              <img src="yt-icon.png" />
+            </div>
+          </div>
+        </div>
+        <form class="flex-form" enctype="multipart/form-data">
+          <div class="form-input">
+            <label for="name" class="form-label">Name</label>
+            <input required type="text" id="name" />
+          </div>
+          <div class="form-input">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input required id="phoneNumber" type="text" />
+          </div>
+          <div class="form-input">
+            <label for="email" class="form-label">Email Address</label>
+            <input required type="email" id="email" />
+          </div>
+          <div class="form-input">
+            <label for="receipt" class="form-label">Proof of receipt</label>
+            <input required type="file" id="receipt" accept="image/*" />
+          </div>
+          <button class="form-submit" id="submitBtn" type="submit">
+            Submit!
+          </button>
+          <button id="share-to-instagram">Share to Instagram Story</button>
+        </form>
+      </div>
+      <div class="flex-text-soc mb-flex">
+        <div class="flex-text-soc-ttl">Visit Our Social Media</div>
+        <div class="flex-text-soc-icon">
+          <img src="ig-icon.png" />
+          <img src="fb-icon.png" />
+          <img src="yt-icon.png" />
+        </div>
+      </div>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="module" src="main.js"></script>
+    <script>
+      document.getElementById('share-to-instagram').addEventListener('click', function() {
+          // URL of the image you want to share
+          const imageUrl = 'https://drive.google.com/file/d/1ZFeglX-M5Xjmx1qoDhxCt8ojorW54D5x/view?usp=sharing';
+          
+          // Create an Instagram deep link
+          const instagramUrl = `https://www.instagram.com/create/story/?image=${encodeURIComponent(imageUrl)}`;
+
+          // Open Instagram with the deep link
+          window.location.href = instagramUrl;
+      });
+  </script>
+
+  </body>
+</html>

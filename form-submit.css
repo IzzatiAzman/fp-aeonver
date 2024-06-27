@@ -1,0 +1,158 @@
+@font-face {
+    font-family: PressStart2P;
+    src: url('PressStart2P.ttf');
+}
+
+body {
+    margin: 0px;
+    font-family: PressStart2P;
+    color: #FFFFFF;
+}
+
+.main-div {
+    background-image: url('background-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-div {
+    padding-bottom: 17px;
+}
+
+
+.flex-text-ttl {
+    text-align: center;
+    margin: 40px 0px 50px 0px;
+}
+
+.pc-flex {
+    display: none;
+}
+
+.main-logo {
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+.flex-form {
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    padding: 40px 50px 40px 50px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: #4E4D4D;
+    margin: 0px 120px 0px 120px;
+}
+
+.mb-flex {
+    margin: 30px 120px 0px 120px;
+    padding-bottom: 50px;
+}
+
+.flex-text-soc-ttl {
+    padding-bottom: 12px;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #707070;
+}
+
+input[type=file] {
+    width: 100%;
+    padding: 10px 2px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.flex-text-soc-icon {
+    display: flex;
+    justify-content: left;
+}
+
+.flex-text-soc-icon img {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.form-input {
+    margin: 0px 0px 20px 0px;
+}
+
+.form-label {
+    padding-bottom: 10px;
+}
+
+.form-submit {
+    background-color: #F9B315;
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding: 12px 0px 12px 0px;
+    color: #FFFFFF;
+    font-family: PressStart2P;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 620px) {
+    .flex-div {
+        padding-bottom: 33px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .main-logo {
+        top: 40px;
+    }
+
+    .flex-div {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 100px 0px 100px;
+        padding-bottom: 382px;
+    }
+
+    .flex-text {
+        position: relative;
+        width: -webkit-fill-available;
+    }
+
+    .flex-text-ttl {
+        position: absolute;
+        top: 40px;
+        line-height: 20px;
+        text-align: left;
+        margin: 40px 100px 50px 0px;
+    }
+
+    .flex-text-soc {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .flex-text-soc-ttl {
+        padding-bottom: 12px;
+        line-height: 20px;
+    }
+
+    .flex-form {
+        margin: 0px;
+        width: 60%;
+    }
+
+    .mb-flex {
+        display: none;
+    }
+
+    .pc-flex {
+        display: block;
+    }
+}
