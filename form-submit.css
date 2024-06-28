@@ -17,7 +17,8 @@ body {
 }
 
 .flex-div {
-    padding-bottom: 17px;
+    padding: 0px 20px 17px 20px;
+
 }
 
 
@@ -43,12 +44,12 @@ body {
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     color: #4E4D4D;
-    margin: 0px 120px 0px 120px;
 }
 
 .mb-flex {
-    margin: 30px 120px 0px 120px;
+    margin: 30px 20px 0px 20px;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .flex-text-soc-ttl {
@@ -73,7 +74,7 @@ input[type=file] {
 
 .flex-text-soc-icon {
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 .flex-text-soc-icon img {
@@ -104,7 +105,7 @@ input[type=file] {
 
 @media only screen and (min-width: 620px) {
     .flex-div {
-        padding-bottom: 33px;
+        padding: 0px 0px 33px 0px;
     }
 }
 
@@ -117,7 +118,7 @@ input[type=file] {
         display: flex;
         justify-content: space-between;
         margin: 0px 100px 0px 100px;
-        padding-bottom: 382px;
+        padding: 0px 0px 382px  0px;
     }
 
     .flex-text {
@@ -136,6 +137,10 @@ input[type=file] {
     .flex-text-soc {
         position: absolute;
         bottom: 0;
+    }
+
+    .flex-text-soc-icon {
+        justify-content: left;
     }
 
     .flex-text-soc-ttl {

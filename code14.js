@@ -212,7 +212,7 @@ for (var i = 0, k = 0, l = gdjs.Level3Code.GDJumpButtonObjects3.length;i<l;++i) 
 gdjs.Level3Code.GDJumpButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22237108);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22051420);
 }
 }
 if (isConditionTrue_0) {
@@ -241,7 +241,7 @@ for (var i = 0, k = 0, l = gdjs.Level3Code.GDJumpButtonObjects2.length;i<l;++i) 
 gdjs.Level3Code.GDJumpButtonObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22216356);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19578132);
 }
 }
 if (isConditionTrue_0) {
@@ -272,7 +272,7 @@ for (var i = 0, k = 0, l = gdjs.Level3Code.GDJumpButtonObjects2.length;i<l;++i) 
 gdjs.Level3Code.GDJumpButtonObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22225428);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20558748);
 }
 }
 if (isConditionTrue_0) {
@@ -407,13 +407,160 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.systemInfo.hasTouchScreen(runtimeScene));
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Joystick"), gdjs.Level3Code.GDJoystickObjects1);
-gdjs.copyArray(runtimeScene.getObjects("JumpButton"), gdjs.Level3Code.GDJumpButtonObjects1);
-{for(var i = 0, len = gdjs.Level3Code.GDJumpButtonObjects1.length ;i < len;++i) {
-    gdjs.Level3Code.GDJumpButtonObjects1[i].deleteFromScene(runtimeScene);
+gdjs.copyArray(runtimeScene.getObjects("Joystick"), gdjs.Level3Code.GDJoystickObjects2);
+gdjs.copyArray(runtimeScene.getObjects("JumpButton"), gdjs.Level3Code.GDJumpButtonObjects2);
+{for(var i = 0, len = gdjs.Level3Code.GDJumpButtonObjects2.length ;i < len;++i) {
+    gdjs.Level3Code.GDJumpButtonObjects2[i].deleteFromScene(runtimeScene);
 }
-for(var i = 0, len = gdjs.Level3Code.GDJoystickObjects1.length ;i < len;++i) {
-    gdjs.Level3Code.GDJoystickObjects1[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.Level3Code.GDJoystickObjects2.length ;i < len;++i) {
+    gdjs.Level3Code.GDJoystickObjects2[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Up");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Level3Code.GDPlayerObjects2);
+{for(var i = 0, len = gdjs.Level3Code.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.Level3Code.GDPlayerObjects2[i].getBehavior("PlatformerObject").simulateUpKey();
+}
+}{for(var i = 0, len = gdjs.Level3Code.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.Level3Code.GDPlayerObjects2[i].getBehavior("PlatformerObject").simulateLadderKey();
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Left");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Level3Code.GDPlayerObjects2);
+{for(var i = 0, len = gdjs.Level3Code.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.Level3Code.GDPlayerObjects2[i].getBehavior("PlatformerObject").simulateLeftKey();
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "s");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Down");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Level3Code.GDPlayerObjects2);
+{for(var i = 0, len = gdjs.Level3Code.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.Level3Code.GDPlayerObjects2[i].getBehavior("PlatformerObject").simulateDownKey();
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Level3Code.GDPlayerObjects2);
+{for(var i = 0, len = gdjs.Level3Code.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.Level3Code.GDPlayerObjects2[i].getBehavior("PlatformerObject").simulateRightKey();
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Level3Code.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.Level3Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.Level3Code.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateJumpKey();
 }
 }}
 
@@ -448,7 +595,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22252356);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17513356);
 }
 }
 if (isConditionTrue_0) {
@@ -480,7 +627,7 @@ for (var i = 0, k = 0, l = gdjs.Level3Code.GDPlayerObjects3.length;i<l;++i) {
 gdjs.Level3Code.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22194300);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20158092);
 }
 }
 if (isConditionTrue_0) {
@@ -499,7 +646,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Player__IsSteppingOnFloor.func(runtimeScene, gdjs.Level3Code.mapOfGDgdjs_9546Level3Code_9546GDPlayerObjects3Objects, "PlatformerObject", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22193692);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21019132);
 }
 }
 if (isConditionTrue_0) {
@@ -1180,7 +1327,7 @@ gdjs.Level3Code.eventsList18 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22278932);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17557540);
 }
 if (isConditionTrue_0) {
 
@@ -1457,7 +1604,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Level3Code.mapOfGDgdjs_9546Level3Code_9546GDPlayerObjects2Objects, gdjs.Level3Code.mapOfGDgdjs_9546Level3Code_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22274052);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11741532);
 }
 }
 if (isConditionTrue_0) {
