@@ -285,7 +285,7 @@ if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Intro"), gdjs.Start_32GameCode.GDIntroObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Muted"), gdjs.Start_32GameCode.GDMutedObjects1);
 gdjs.copyArray(runtimeScene.getObjects("StartVideo"), gdjs.Start_32GameCode.GDStartVideoObjects1);
-{gdjs.evtTools.sound.playSound(runtimeScene, "72e9c7d27d07ead77a928dacdf3947412c9aa607e22b3a94d26fa7f9412224ee_01 - super mushroom eater revised and fixed.aac", true, 70, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "72e9c7d27d07ead77a928dacdf3947412c9aa607e22b3a94d26fa7f9412224ee_01 - super mushroom eater revised and fixed.aac", true, 100, 1);
 }{for(var i = 0, len = gdjs.Start_32GameCode.GDIntroObjects1.length ;i < len;++i) {
     gdjs.Start_32GameCode.GDIntroObjects1[i].resetTimer("TypingSound");
 }

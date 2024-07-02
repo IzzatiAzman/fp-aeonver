@@ -9,28 +9,47 @@
   <body>
     <div class="main-div">
       <div class="main-logo">
-        <img src="Mask Group 44.png" />
+        <img src="fp-logo.png" />
       </div>
       <div class="flex-div">
         <div class="flex-text">
           <div class="flex-text-ttl">
-            Congratulations on clearing the Speedmart 99 Nugget Quest stage. 
-            <br><br>
-            Submit your receipt of purchase [insert product name here] and fill in the form to stand a chance at winning exciting prizes.  
-            <br><br>
-            Follow our social media where we'll announce the winners!
-
+            <span
+              >Congratulations on clearing the Speedmart 99 Nugget Quest
+              stage.</span
+            >
+            <span>
+              Submit your receipt of purchase First Pride BBQ Flavour and fill
+              in the form to stand a chance at winning exciting prizes.
+            </span>
+            <span
+              >Follow our social media where we'll announce the winners!</span
+            >
           </div>
           <div class="flex-text-soc pc-flex">
             <div class="flex-text-soc-ttl">Visit Our Social Media</div>
             <div class="flex-text-soc-icon">
-              <img src="ig-icon.png" />
-              <img src="fb-icon.png" />
-              <img src="yt-icon.png" />
+              <a
+                href="https://www.instagram.com/firstpridemy/?hl=en"
+                target="_blank"
+                ><img src="ig-icon.png"
+              /></a>
+              <a href="https://www.facebook.com/FirstPrideMY/" target="_blank"
+                ><img src="fb-icon.png"
+              /></a>
+              <a
+                href="https://www.youtube.com/@firstpridemalaysia9154"
+                target="_blank"
+                ><img src="yt-icon.png"
+              /></a>
             </div>
           </div>
         </div>
         <form class="flex-form" enctype="multipart/form-data">
+          <div class="form-input">
+            <label for="player-uuid" class="form-label">Player UUID</label>
+            <input required disabled type="text" id="player-uuid" />
+          </div>
           <div class="form-input">
             <label for="name" class="form-label">Name</label>
             <input required type="text" id="name" />
@@ -50,32 +69,36 @@
           <button class="form-submit" id="submitBtn" type="submit">
             Submit!
           </button>
-          <button id="share-to-instagram">Share to Instagram Story</button>
         </form>
+
+        <div id="back-button">
+          <a href="/">< Go back</a>
+        </div>
       </div>
+
       <div class="flex-text-soc mb-flex">
         <div class="flex-text-soc-ttl">Visit Our Social Media</div>
         <div class="flex-text-soc-icon">
-          <img src="ig-icon.png" />
-          <img src="fb-icon.png" />
-          <img src="yt-icon.png" />
+          <a
+            href="https://www.instagram.com/firstpridemy/?hl=en"
+            target="_blank"
+            ><img src="ig-icon.png"
+          /></a>
+          <a href="https://www.facebook.com/FirstPrideMY/" target="_blank"
+            ><img src="fb-icon.png"
+          /></a>
+          <a
+            href="https://www.youtube.com/@firstpridemalaysia9154"
+            target="_blank"
+            ><img src="yt-icon.png"
+          /></a>
         </div>
       </div>
     </div>
+    <div id="overlay">
+      <div id="overlay-content">Please wait...</div>
+    </div>
     <script src="jquery-3.7.1.min.js"></script>
     <script type="module" src="main.js"></script>
-    <script>
-      document.getElementById('share-to-instagram').addEventListener('click', function() {
-          // URL of the image you want to share
-          const imageUrl = 'https://imgur.com/a/9z8fxzY';
-          
-          // Create an Instagram deep link
-          const instagramUrl = `https://www.instagram.com/create/story/?image=${encodeURIComponent(imageUrl)}`;
-
-          // Open Instagram with the deep link
-          window.location.href = instagramUrl;
-      });
-  </script>
-
   </body>
 </html>

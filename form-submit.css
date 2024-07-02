@@ -9,22 +9,83 @@ body {
     color: #FFFFFF;
 }
 
+.form-input label,
+.form-input input {
+    font-family: PressStart2P;
+}
+
+
+.form-input input:disabled {
+    background-color: #e0e0e0;
+    /* Light grey background */
+    color: #a0a0a0;
+    /* Grey border */
+    cursor: not-allowed;
+}
+
+/* Overlay styles */
+#overlay {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Sit on top of the page content */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with transparency */
+    z-index: 9999;
+    /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+}
+
+#player-uuid {
+    font-size: 12px;
+}
+
 .main-div {
-    background-image: url('background-image.png');
+    background-image: url('background-image.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .flex-div {
-    padding: 0px 20px 17px 20px;
+    padding-bottom: 17px;
+}
 
+#back-button {
+    padding: 1rem;
+    position: absolute;
+    bottom: 9.8rem;
+}
+
+#back-button a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 
 .flex-text-ttl {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     text-align: center;
-    margin: 40px 0px 50px 0px;
+    margin: 40px 10px 50px 10px;
 }
 
 .pc-flex {
@@ -44,12 +105,12 @@ body {
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     color: #4E4D4D;
+    margin: 0px 15px 0px 15px;
 }
 
 .mb-flex {
-    margin: 30px 20px 0px 20px;
+    margin: 30px 120px 0px 120px;
     padding-bottom: 50px;
-    text-align: center;
 }
 
 .flex-text-soc-ttl {
@@ -105,11 +166,32 @@ input[type=file] {
 
 @media only screen and (min-width: 620px) {
     .flex-div {
-        padding: 0px 0px 33px 0px;
+        padding-bottom: 33px;
+    }
+
+    .flex-form {
+        margin: 0px 50px;
+    }
+
+    .flex-text-soc-ttl {
+        text-align: center;
+    }
+
+    #back-button {
+        bottom: 8rem;
     }
 }
 
 @media only screen and (min-width: 1024px) {
+
+    .flex-text-soc-ttl {
+        text-align: left;
+    }
+
+    .flex-text-soc-icon {
+        justify-content: left;
+    }
+
     .main-logo {
         top: 40px;
     }
@@ -118,7 +200,7 @@ input[type=file] {
         display: flex;
         justify-content: space-between;
         margin: 0px 100px 0px 100px;
-        padding: 0px 0px 382px  0px;
+        padding-bottom: 382px;
     }
 
     .flex-text {
@@ -131,16 +213,11 @@ input[type=file] {
         top: 40px;
         line-height: 20px;
         text-align: left;
-        margin: 40px 100px 50px 0px;
     }
 
     .flex-text-soc {
         position: absolute;
-        bottom: 0;
-    }
-
-    .flex-text-soc-icon {
-        justify-content: left;
+        bottom: -120px;
     }
 
     .flex-text-soc-ttl {
@@ -149,8 +226,9 @@ input[type=file] {
     }
 
     .flex-form {
-        margin: 0px;
-        width: 60%;
+        width: 80%;
+        margin: 0px 20px 0px 20px;
+
     }
 
     .mb-flex {
