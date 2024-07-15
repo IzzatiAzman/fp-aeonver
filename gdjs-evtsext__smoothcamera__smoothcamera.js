@@ -227,6 +227,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera = class SmoothCamera exten
     };
   }
   updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
     
     if (networkSyncData.props.LeftwardSpeed !== undefined)
       this._behaviorData.LeftwardSpeed = networkSyncData.props.LeftwardSpeed;
@@ -4652,7 +4653,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(20762092);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(20925948);
 }
 }
 if (isConditionTrue_0) {

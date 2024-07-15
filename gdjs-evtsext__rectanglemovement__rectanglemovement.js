@@ -87,6 +87,7 @@ gdjs.evtsExt__RectangleMovement__RectangleMovement.RectangleMovement = class Rec
     };
   }
   updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
     
     if (networkSyncData.props.Width !== undefined)
       this._behaviorData.Width = networkSyncData.props.Width;

@@ -55,6 +55,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__MultitouchButton.MultitouchButton = clas
     };
   }
   updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
     
     if (networkSyncData.props.ControllerIdentifier !== undefined)
       this._behaviorData.ControllerIdentifier = networkSyncData.props.ControllerIdentifier;

@@ -59,6 +59,7 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM = class ButtonFSM extends g
     };
   }
   updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
     
     if (networkSyncData.props.ShouldCheckHovering !== undefined)
       this._behaviorData.ShouldCheckHovering = networkSyncData.props.ShouldCheckHovering;

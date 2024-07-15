@@ -16,34 +16,33 @@
       <div class="flex-div">
         <div class="flex-text">
           <div class="flex-text-ttl">
-            <span
-              >Congratulations on clearing the Speedmart 99 Nugget Quest
-              stage.</span
+            <div class="flex-text-ttl-main">Incredible!<br>Congratulations, you cleared the game!</div>
+            <span class="flex-text-desc">Now to be eligible to win, you need to:
+              <br>
+              <br>
+              1. Fill up the form <br>
+              2. Tag ‘First Pride Malaysia’ when you share your results to Facebook/Instagram
+              <br><br>
+              Winners are announced weekly on our socials, so follow now so you don’t miss it!
+              </span
             >
-            <span>
-              Submit your receipt of purchase First Pride BBQ Flavour and fill
-              in the form to stand a chance at winning exciting prizes.
-            </span>
-            <span
-              >Follow our social media where we'll announce the winners!</span
-            >
-          </div>
-          <div class="flex-text-soc pc-flex">
-            <div class="flex-text-soc-ttl">Visit Our Social Media</div>
-            <div class="flex-text-soc-icon">
-              <a
-                href="https://www.instagram.com/firstpridemy/?hl=en"
-                target="_blank"
-                ><img src="ig-icon.png"
-              /></a>
-              <a href="https://www.facebook.com/FirstPrideMY/" target="_blank"
-                ><img src="fb-icon.png"
-              /></a>
-              <a
-                href="https://www.youtube.com/@firstpridemalaysia9154"
-                target="_blank"
-                ><img src="yt-icon.png"
-              /></a>
+            <div class="flex-text-soc pc-flex">
+              <div class="flex-text-soc-ttl">Follow our socials</div>
+              <div class="flex-text-soc-icon">
+                <a href="https://www.facebook.com/FirstPrideMY/" target="_blank"
+                  ><img src="FB.png"
+                /></a>
+                <a
+                  href="https://www.instagram.com/firstpridemy/?hl=en"
+                  target="_blank"
+                  ><img src="IG.png"
+                /></a>
+                <a
+                  href="https://www.youtube.com/@firstpridemalaysia9154"
+                  target="_blank"
+                  ><img src="YT.png"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
@@ -53,53 +52,69 @@
             <input required disabled type="text" id="player-uuid" />
           </div>
           <div class="form-input">
-            <label for="name" class="form-label">Name</label>
-            <input required type="text" id="name" />
+            <label for="name" class="form-label">Name <span style="color: red;">*</span></label>
+            <input required type="text" id="name" placeholder="Enter your name" maxlength="100" pattern="[A-Za-z\s\-.,']+" />
           </div>
           <div class="form-input">
-            <label for="phoneNumber" class="form-label">Phone Number</label>
-            <input required id="phoneNumber" type="text" />
+            <label for="phoneNumber" class="form-label">Phone Number <span style="color: red;">*</span></label>
+            <input required id="phoneNumber" placeholder="Enter your phone number" type="text" maxlength="12" pattern="\d*" />
           </div>
           <div class="form-input">
-            <label for="email" class="form-label">Email Address</label>
-            <input required type="email" id="email" />
+            <label for="email" class="form-label">Email Address <span style="color: red;">*</span></label>
+            <input required type="email" placeholder="Enter your email address" id="email" />
           </div>
           <div class="form-input">
-            <label for="receipt" class="form-label">Proof of receipt</label>
+            <label for="receipt" class="form-label">Proof of receipt <span style="color: red;">*</span></label>
             <input required type="file" id="receipt" accept="image/*" />
           </div>
           <button class="form-submit" id="submitBtn" type="submit">
             Submit!
           </button>
         </form>
-
-        <div id="back-button">
-          <a href="/">< Go back</a>
-        </div>
       </div>
 
       <div class="flex-text-soc mb-flex">
         <div class="flex-text-soc-ttl">Visit Our Social Media</div>
         <div class="flex-text-soc-icon">
-          <a
-            href="https://www.instagram.com/firstpridemy/?hl=en"
-            target="_blank"
-            ><img src="ig-icon.png"
-          /></a>
           <a href="https://www.facebook.com/FirstPrideMY/" target="_blank"
-            ><img src="fb-icon.png"
-          /></a>
-          <a
-            href="https://www.youtube.com/@firstpridemalaysia9154"
-            target="_blank"
-            ><img src="yt-icon.png"
-          /></a>
+              ><img src="FB.png"
+            /></a>
+            <a
+              href="https://www.instagram.com/firstpridemy/?hl=en"
+              target="_blank"
+              ><img src="IG.png"
+            /></a>
+            <a
+              href="https://www.youtube.com/@firstpridemalaysia9154"
+              target="_blank"
+              ><img src="YT.png"
+            /></a>
         </div>
+      </div>
+
+      <div class="redirect-btn">
+        <a href="/"><img src="MAIN MENU-sm.png" id="back-button"/></a>
+        <a href="/"><img src="DISCOVER OUR PRODUCT-sm.png" id="home-button"/></a>
       </div>
     </div>
     <div id="overlay">
       <div id="overlay-content">Please wait...</div>
     </div>
+    <div id="customAlert" class="hidden">
+      <div class="alertBox">
+        <span class="closeBtn" id="closeAlertBtn">&times;</span>
+          <div class="popup-msg">
+            <p>Thank you for joining!</p>
+            <p>Remember to screenshot and<br>post your score to stand a<br>chance to win!</p>
+          </div>
+          <div class="social-post">
+            <img id="image" src="social-masthead.png" alt="Social Image">
+            <img src="FB.png" id="shareButton"/>
+            <img src="IG.png" id="instagramButton"/>
+          </div>
+      </div>
+    </div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>

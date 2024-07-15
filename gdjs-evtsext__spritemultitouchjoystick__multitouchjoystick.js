@@ -63,6 +63,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__MultitouchJoystick.MultitouchJoystick = 
     };
   }
   updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
     
     if (networkSyncData.props.ControllerIdentifier !== undefined)
       this._behaviorData.ControllerIdentifier = networkSyncData.props.ControllerIdentifier;

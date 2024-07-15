@@ -6,7 +6,7 @@
 body {
     margin: 0px;
     font-family: PressStart2P;
-    color: #FFFFFF;
+    color: #FFEFCF;
 }
 
 .form-input label,
@@ -56,8 +56,73 @@ body {
     font-size: 12px;
 }
 
+.hidden {
+    display: none !important;
+}
+
+#customAlert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alertBox {
+    background-color: #FCD297;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 30px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 1px 6px;
+    width: 30px;
+    height: 30px;
+    background-color: #A58553;
+}
+
+.popup-msg {
+    color: #935B0A;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 30px;
+}
+
+.social-post {
+    background-color: #935B0A;
+    padding: 8px;
+    border-radius: 0px 0px 11px 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-post img {
+    width: 46px;
+}
+
+#shareButton {
+    margin-right: 20px;
+}
+
+#image {
+    display: none;
+}
+
 .main-div {
-    background-image: url('background-image.jpg');
+    background-image: url('static-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,11 +133,12 @@ body {
     padding-bottom: 17px;
 }
 
-#back-button {
-    padding: 1rem;
-    position: absolute;
-    bottom: 9.8rem;
+.flex-text-ttl-main {
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
 }
+
 
 #back-button a {
     text-decoration: none;
@@ -133,14 +199,25 @@ input[type=file] {
     border: none;
 }
 
+.flex-text-soc {
+    text-align: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(120,170,156, 0.7);
+    padding: 10px 24px;
+    border-radius: 20px;
+    margin: 20px 15px;
+}
+
 .flex-text-soc-icon {
     display: flex;
     justify-content: center;
+    
 }
 
 .flex-text-soc-icon img {
     margin-right: 15px;
     cursor: pointer;
+    width: 46px;
 }
 
 .form-input {
@@ -161,13 +238,30 @@ input[type=file] {
     cursor: pointer;
 }
 
+.redirect-btn {
+    text-align: center;
+}
+
+#back-button {
+    padding-bottom: 8px;
+}
+
 @media only screen and (min-width: 620px) {
     .flex-div {
-        padding-bottom: 33px;
+        padding-bottom: 40px;
     }
 
     .flex-form {
         margin: 0px 50px;
+    }
+
+    .flex-text-soc {
+        text-align: center;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(120,170,156, 0.7);
+        padding: 10px 24px;
+        border-radius: 20px;
+        margin: 20px 50px;
     }
 
     .flex-text-soc-ttl {
@@ -175,19 +269,21 @@ input[type=file] {
     }
 
     #back-button {
-        bottom: 8rem;
+        margin-right: 20px;
+        padding-bottom: 0px;
+    }
+
+    .redirect-btn {
+        display: flex;
+        margin: 20px 50px 0px 50px;
+        padding-bottom: 60px;
+        justify-content: center;
+        text-align: inherit;
     }
 }
 
 @media only screen and (min-width: 1024px) {
 
-    .flex-text-soc-ttl {
-        text-align: left;
-    }
-
-    .flex-text-soc-icon {
-        justify-content: left;
-    }
 
     .main-logo {
         top: 40px;
@@ -196,13 +292,17 @@ input[type=file] {
     .flex-div {
         display: flex;
         justify-content: space-between;
-        margin: 0px 100px 0px 100px;
-        padding-bottom: 382px;
+        margin: 0px 100px 60px 100px;
     }
 
     .flex-text {
         position: relative;
         width: -webkit-fill-available;
+    }
+
+    .flex-text-ttl-main {
+        font-size: 22px;
+        text-align: center;
     }
 
     .flex-text-ttl {
@@ -212,10 +312,6 @@ input[type=file] {
         text-align: left;
     }
 
-    .flex-text-soc {
-        position: absolute;
-        bottom: -120px;
-    }
 
     .flex-text-soc-ttl {
         padding-bottom: 12px;
@@ -224,7 +320,7 @@ input[type=file] {
 
     .flex-form {
         width: 80%;
-        margin: 0px 20px 0px 20px;
+        margin: 0px 20px 0px 100px;
 
     }
 
@@ -234,5 +330,10 @@ input[type=file] {
 
     .pc-flex {
         display: block;
+    }
+
+    .redirect-btn {
+        margin: 0px 100px;
+        padding-bottom: 100px;
     }
 }

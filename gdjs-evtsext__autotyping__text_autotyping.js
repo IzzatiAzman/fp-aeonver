@@ -47,6 +47,7 @@ gdjs.evtsExt__AutoTyping__Text_AutoTyping.Text_AutoTyping = class Text_AutoTypin
     };
   }
   updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
     
     if (networkSyncData.props.Interval !== undefined)
       this._behaviorData.Interval = networkSyncData.props.Interval;
@@ -1225,7 +1226,7 @@ gdjs.evtsExt__AutoTyping__Text_AutoTyping.Text_AutoTyping.prototype.ChangeInterv
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(20368644);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(20532572);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__AutoTyping__Text_AutoTyping.Text_AutoTyping.prototype.ChangeIntervalContext.GDObjectObjects1);

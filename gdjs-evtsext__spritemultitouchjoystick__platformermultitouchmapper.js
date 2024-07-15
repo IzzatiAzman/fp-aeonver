@@ -51,6 +51,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__PlatformerMultitouchMapper.PlatformerMul
     };
   }
   updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
     
     if (networkSyncData.props.Property !== undefined)
       this._behaviorData.Property = networkSyncData.props.Property;

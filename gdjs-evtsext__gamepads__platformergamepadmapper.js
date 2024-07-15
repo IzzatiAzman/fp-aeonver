@@ -59,6 +59,7 @@ gdjs.evtsExt__Gamepads__PlatformerGamepadMapper.PlatformerGamepadMapper = class 
     };
   }
   updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
     
     if (networkSyncData.props.PlatformerCharacter !== undefined)
       this._behaviorData.PlatformerCharacter = networkSyncData.props.PlatformerCharacter;

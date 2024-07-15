@@ -39,6 +39,7 @@ gdjs.evtsExt__Enemy__MonsterEnemy.MonsterEnemy = class MonsterEnemy extends gdjs
     };
   }
   updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
     
     if (networkSyncData.props.Animation !== undefined)
       this._behaviorData.Animation = networkSyncData.props.Animation;

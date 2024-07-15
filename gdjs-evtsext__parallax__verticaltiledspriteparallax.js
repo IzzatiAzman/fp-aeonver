@@ -47,6 +47,7 @@ gdjs.evtsExt__Parallax__VerticalTiledSpriteParallax.VerticalTiledSpriteParallax 
     };
   }
   updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
     
     if (networkSyncData.props.ParallaxFactor !== undefined)
       this._behaviorData.ParallaxFactor = networkSyncData.props.ParallaxFactor;

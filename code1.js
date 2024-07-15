@@ -286,7 +286,7 @@ for (var i = 0, k = 0, l = gdjs.Name_32SceneCode.GDTnCObjects1.length;i<l;++i) {
 }
 gdjs.Name_32SceneCode.GDTnCObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.window.openURL("https://drive.google.com/file/d/1VTVvYE7CRUIZEOltO6UYP-t5WwyIGQNd/view?usp=sharing", runtimeScene);
+{gdjs.evtTools.window.openURL("https://drive.google.com/file/d/1aPMnxunbc_POwZ9HPhK2MnI61SYpecLw/view?usp=sharing", runtimeScene);
 }}
 
 }
@@ -342,7 +342,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("required_name"), gdjs.Name_32SceneCode.GDrequired_9595nameObjects1);
-{gdjs.evtTools.sound.playSound(runtimeScene, "72e9c7d27d07ead77a928dacdf3947412c9aa607e22b3a94d26fa7f9412224ee_01 - super mushroom eater revised and fixed.aac", true, 70, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "72e9c7d27d07ead77a928dacdf3947412c9aa607e22b3a94d26fa7f9412224ee_01-super_mushroom_eater_revised_and_fixed.aac", true, 70, 1);
 }{for(var i = 0, len = gdjs.Name_32SceneCode.GDrequired_9595nameObjects1.length ;i < len;++i) {
     gdjs.Name_32SceneCode.GDrequired_9595nameObjects1[i].hide();
 }
